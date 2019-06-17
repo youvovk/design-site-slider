@@ -1,0 +1,636 @@
+    @font-face {
+        font-family: 'Sofia Pro';
+        src: local('fonts/Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+            url('fonts/SofiaProRegular.woff2') format('woff2'),
+            url('fonts/SofiaProRegular.woff') format('woff'),
+            url('fonts/SofiaProRegular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Sofia Pro';
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: #FFFAFA;
+    }
+    h1{
+        color: #FFFAFA;
+    }
+
+    header {
+        width: 100%;
+    }
+
+
+/*Start Animation*/
+
+body {
+      animation: body-opacity-change 1s ease-in-out 0s 1 forwards;
+      opacity: 0;
+      background-color: transparent;
+  }
+  @keyframes body-opacity-change {
+      from { opacity: 0; background-color: transparent; }
+      to { opacity: 1; background-color: #fff; }
+  }
+
+/*End Animation*/
+
+    .container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .container__title{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .header{
+        height: 150px;
+        background-color: #4682B4;
+    }
+    .header__wrapper{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .header__wrapper-container{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .header__wrapper-name{
+ 
+
+        padding: 25px 0 12px 0;
+
+    }
+    .header__wrapper-name h1{
+        font-size: 30px;
+
+    }
+    .nav__menu{
+        margin-top: 15px;
+    }
+    .desktop a:hover{
+        border-bottom: 3px solid #87CEEB;
+    }
+    .toggle__menu a:hover{
+        border-bottom: 3px solid #87CEEB;
+    }
+    .nav__menu{
+      
+    }
+    .desktop a{
+        font-size: 20px;
+        margin-right: 3%;
+    }
+    .desktop__a{
+        margin-left: 2%;
+    }
+
+
+
+
+    .main__grid{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+    }
+    .main__grid-container{
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+    }
+    .main__grid-wrap{
+        display: flex;
+        margin: 20px 0 20px 0;
+    }
+    .grid__wrapper{
+        width: 100%;
+    }
+    .main__image{
+        margin-top: 15px;
+    }
+    .main__image img{
+        min-width: 60%;
+        padding: 0 0 20px 0;
+    }
+    .grid{
+        margin: 20px 0 20px 0;
+    }
+    .main__biografie {
+        line-height: 1.5;
+        margin-bottom: 2em;
+    }
+    .main__biografie h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .grid__end{
+        text-align: right;
+    }
+
+
+/*Start slider*/
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 50px;
+    }
+
+    .slider__control_right {
+      right: 50px;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url(img/left.png);
+    }
+
+    .slider__control_right::before {
+      background-image: url(img/right.png);
+    }
+
+    .slider__item img{
+        width: 100%;
+        
+    }
+
+/*End slider*/
+
+  
+    footer{
+
+
+        background-color: #4682B4;
+    }
+    .footer__grid{
+        width: 100%;
+        max-width: 1100px;
+        display: flex;
+        margin: 0 auto;
+        color: #fff;
+        padding-top: 10px;
+    }
+    .grid__wrapper-footer{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .grid__wrapper-footer h3{
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .grid__wrapper-footer li{
+        margin-bottom: 20px;
+    }
+    .second-grid ul{
+        text-align: right;
+    }
+
+
+
+@media screen and (min-width: 1700px) {
+    .container {
+        width: 100%;
+        max-width: 1900px;
+        margin: 0 auto;
+    }
+    .container__title{
+        width: 100%;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+    .header__wrapper{
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .header__wrapper-container{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .header__wrapper-name h1{
+        font-size: 45px;
+
+    }
+    .desktop a:hover{
+        border-bottom: 7px solid #87CEEB;
+    }
+    .toggle__menu a:hover{
+        border-bottom: 7px solid #87CEEB;
+    }
+    .desktop a{
+        font-size: 25px;
+        margin-right: 3.6%;
+    }
+    .desktop__a{
+        margin-left: 2.1%;
+    }
+
+
+
+    .main__grid{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .main__grid-container{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .main__biografie{
+        font-size: 25px;
+    }
+    .main__biografie {
+        line-height: 1.5;
+        margin-bottom: 3em;
+    }
+    .main__biografie h2{
+        font-size: 40px;
+    }
+
+
+
+    .footer__grid{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .grid__wrapper-footer h3{
+        font-size: 34px;
+    }
+    .grid__wrapper-footer ul{
+        font-size: 23px;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) {
+     .container {
+        width: 100%;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    .container__title{
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .header__wrapper{
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .header__wrapper-container{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .header__wrapper-name h1{
+        font-size: 40px;
+
+    }
+    .desktop a:hover{
+        border-bottom: 5px solid #87CEEB;
+    }
+    .toggle__menu a:hover{
+        border-bottom: 5px solid #87CEEB;
+    }
+    .desktop a{
+        font-size: 25px;
+        margin-right: 3.3%;
+    }
+    .desktop__a{
+        margin-left: 2.1%;
+    }
+
+
+
+    .main__grid{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .main__grid-container{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .main__biografie{
+        font-size: 20px;
+    }
+    .main__biografie {
+        line-height: 1.5;
+        margin-bottom: 3em;
+    }
+    .main__biografie h2{
+        font-size: 35px;
+    }
+
+
+
+    .footer__grid{
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    .grid__wrapper-footer h3{
+        font-size: 30px;
+    }
+    .grid__wrapper-footer ul{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+
+    .header__wrapper-container{
+        max-width: 1000px;
+    }
+    .header__wrapper-name h1{
+        font-size: 25px;
+    }
+    .desktop a{
+       margin-right: 2%;
+       font-size: 17px;
+    }
+    .desktop__a{
+        margin-left: 3%;
+    }
+
+
+
+    .main__grid-container{
+       max-width: 1000px;
+    }
+    .main__biografie h2{
+        font-size: 25px;
+    }
+    .main__biografie p{
+        font-size: 15px;
+    }
+
+
+ 
+    .footer__grid{
+        max-width: 1000px;
+    }
+    .grid__wrapper-footer li{
+        font-size: 15px;
+    }
+    .grid__wrapper-footer h3{
+        font-style: 20px;
+    }
+    .grid__wrapper-footer h3{
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .header__wrapper-container{
+        max-width: 800px;
+    }
+    .desktop a{
+       margin-right: 1%;
+    }
+    .desktop__a{
+        margin-left: 2%;
+    }
+
+
+    .main__grid-container{
+       max-width: 800px;
+    }
+
+
+    .footer__grid{
+        max-width: 800px;
+    }
+    .grid__wrapper-footer h3{
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header__wrapper-container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .main__grid-wrap{
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+    .grid__end{
+        text-align: left;
+    }
+
+
+    .footer__grid{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .grid__wrapper-footer h3{
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .header__wrapper-container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    nav.mobile{
+        margin-left: 20%;
+    }
+
+
+    .main__grid-wrap{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+
+    .footer__grid{
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+    .grid__wrapper-footer{
+        padding-bottom: 10px;
+    }
+    .grid__wrapper-footer h3{
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .grid__wrapper-footer li{
+        margin: 10px 0 0 0;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header__wrapper-container{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .header__wrapper-name h1{
+        font-size: 20px;
+    }
+
+
+    .main__grid-wrap{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .main__biografie h2{
+        font-size: 20px;
+    }
+    .main__biografie p{
+        font-size: 10px;
+    }
+
+
+    .footer__grid{
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    .grid__wrapper-footer{
+        padding-bottom: 10px;
+    }
+    .grid__wrapper-footer h3{
+        font-size: 15px;
+    }
+    .grid__wrapper-footer li{
+        margin: 10px 0 0 0;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+}
+
+/*Start Mobile Menu*/
+nav.mobile{
+    display: none;
+    margin-top: 50px;
+}
+.toggle__button{
+    color: white;
+    text-align: right;
+    padding-bottom: 30px;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.toggle__menu{
+    display: none;
+    position: absolute;
+    padding: 25px 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0;
+    border-bottom: 1px solid grey;
+}
+.toggle__menu ul{
+    list-style: none;
+}
+.toggle__menu li{
+    text-align: center;
+    border-top: 1px solid grey;
+}
+.toggle__menu a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+    padding: 10px 0;
+}
+.toggle__menu a:hover{
+    color: black;
+}
+
+
+/* End Mobile Menu */
+
+@media screen and (max-width: 940px){
+    .mobile{
+        display: block !important;
+            margin-left: 50%;
+    }
+    .desktop{
+        display: none !important;
+    }
+
+
+    .header__wrapper-container{
+        display: flex;
+    }
+    .toggle__button{
+        font-size: 30px;
+    }
+}
+
